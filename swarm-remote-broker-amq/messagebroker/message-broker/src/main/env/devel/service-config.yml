@@ -29,4 +29,11 @@ swarm:
           http-acceptor:
             http-listener: default
         jmx-management-enabled: true
-
+#--- Consumer config
+  messaging:
+    remote:
+      name: geoexplo-mq
+      host: 192.168.25.100
+      port: 61616
+      jndi-name: java:/jms/geoexplo-mq
+  remote: false
