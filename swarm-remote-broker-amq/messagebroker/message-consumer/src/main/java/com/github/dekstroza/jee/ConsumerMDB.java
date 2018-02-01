@@ -11,7 +11,7 @@ import javax.jms.MessageListener;
 import javax.jms.ObjectMessage;
 import javax.jms.TextMessage;
 
-@ResourceAdapter("remote-mq")
+@ResourceAdapter("geoexplo-mq")
 @MessageDriven(name = "MediationQueueMDB", activationConfig = {
            @ActivationConfigProperty(propertyName = "destinationLookup", propertyValue = "/jms/queue/mediation-queue"),
            @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"), })

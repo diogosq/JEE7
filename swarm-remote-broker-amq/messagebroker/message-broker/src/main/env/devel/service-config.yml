@@ -1,6 +1,6 @@
 swarm:
   bind:
-    address: 0.0.0.0
+    address: 192.168.25.100 #home desk
   network:
     socket-binding-groups:
       standard-sockets:

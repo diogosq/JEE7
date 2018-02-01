@@ -1,10 +1,12 @@
 swarm:
   bind:
-    address: 0.0.0.0
+    address: 192.168.25.100
+  port:
+    offset: 200
   messaging:
     remote:
-      name: remote-mq
-      host: 0.0.0.0
+      name: geoexplo-mq
+      host: 192.168.25.100
       port: 61616
-      jndi-name: java:/jms/remote-mq
+      jndi-name: java:/jms/geoexplo-mq
   remote: true
